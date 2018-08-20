@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Title</title>
+    <h1>속도를 입력해주세요</h1>
+</head>
+<body>
+<form method="post" action="/add/">
+	{% csrf_token %}
+	<p><label for="title">속도(0~255)</label><input type="text" id="speed" name="speed" value="" /></p>
+	<p><input type="submit" value="입력" /></p>
+</form>
+</body>
+</html>
